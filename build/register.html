@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link
+			rel="stylesheet"
+			href=".//css/style.css"
+		/>
+		<script
+			src="./js/main.js"
+			defer
+		></script>
+
+		<title>Register</title>
+	</head>
+	<body class="bg-gray-100 flex items-center justify-center h-screen">
+		<div class="max-w-[700px] bg-white shadow-lg rounded-lg w-full">
+			<h2
+				class="w-full text-center text-2xl font-semibold text-white bg-blue-600 p-3"
+			>
+				Create Account
+			</h2>
+			<form
+				action="#"
+				class="m-6"
+				onsubmit="return onRegister()"
+			>
+				<div class="grid grid-cols-2 gap-6 m-8">
+					<div>
+						<label
+							id="Label-Fname"
+							class="text-xl font-semibold text-blue-600"
+							>First Name :</label
+						>
+						<input
+							id="first-name"
+							type="text"
+							name="first_name"
+							class="mt-1 mb-3 w-full border-2 border-gray-300 rounded-md shadow-sm p-2 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
+							placeholder="Enter your first name"
+						/>
+					</div>
+					<div>
+						<label
+							id="label-Lname"
+							class="text-xl font-semibold text-blue-700"
+							>Last Name :</label
+						>
+						<input
+							id="last-name"
+							type="text"
+							name="last_name"
+							class="mt-1 mb-3 w-full border-2 border-gray-300 rounded-md shadow-sm p-2 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
+							placeholder="Enter your last name"
+						/>
+					</div>
+					<div>
+						<label
+							id="L-email"
+							class="text-xl font-semibold text-blue-600"
+							>Email :</label
+						>
+						<input
+							id="e-mail"
+							type="email"
+							name="email"
+							placeholder="Enter your email address"
+							class="mt-1 mb-3 w-full border-2 border-gray-300 rounded-md shadow-sm p-2 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
+						/>
+					</div>
+					<div>
+						<label
+							id="label-phone-num"
+							class="text-xl font-semibold text-blue-600"
+							>Phone Number :</label
+						>
+						<input
+							id="phone-number"
+							type="tel"
+							name="phone-number"
+							placeholder="Enter your phone number"
+							class="mt-1 mb-3 w-full border-2 border-gray-300 rounded-md shadow-sm p-2 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
+						/>
+					</div>
+					<div>
+						<label
+							id="label-password"
+							class="text-xl font-semibold text-blue-600"
+							>Password :</label
+						>
+						<input
+							id="password-1"
+							type="password"
+							name="password"
+							placeholder="Enter your phone number"
+							class="mt-1 mb-3 w-full border-2 border-gray-300 rounded-md shadow-sm p-2 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
+						/>
+					</div>
+					<div>
+						<label
+							id="label-Con-Pass"
+							class="text-xl font-semibold text-blue-600"
+							>Confirem Password :</label
+						>
+						<input
+							id="Confirem-Password"
+							type="password"
+							name="password"
+							placeholder="Enter your phone number"
+							class="mt-1 mb-3 w-full border-2 border-gray-300 rounded-md shadow-sm p-2 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
+						/>
+					</div>
+					<div>
+						<label
+							id="L_Gender"
+							class="text-xl font-semibold text-blue-600"
+							>Gender :</label
+						>
+						<div class="mt-1 space-x-4">
+							<label class="text-xl font-semibold text-blue-600">
+								<input
+									id="gender_M"
+									type="radio"
+									name="gender"
+									value="male"
+									class="text-blue-500 focus:ring-blue-500"
+								/>
+								Male
+							</label>
+							<label class="text-xl font-semibold text-blue-600">
+								<input
+									id="gender_F"
+									type="radio"
+									name="gender"
+									value="female"
+									class="text-blue-500 focus:ring-blue-500"
+								/>
+								Female
+							</label>
+						</div>
+					</div>
+					<div>
+						<label
+							id="L_birthday"
+							class="text-xl font-semibold text-blue-600"
+							>Birthdate :</label
+						>
+						<input
+							id="Birthdate"
+							type="date"
+							class="mt-1 mb-3 w-full border-2 border-gray-300 rounded-md shadow-sm p-2 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
+						/>
+					</div>
+				</div>
+				<div class="flex space-x-4">
+					<input
+						type="reset"
+						value="Reset"
+						class="w-[7rem] h-12 bg-white cursor-pointer rounded-3xl border-2 border-blue-500 shadow-[inset_0px_-2px_0px_1px_#3b82f6] group hover:bg-[#3b82f6] transition duration-300 ease-in-out active:scale-95"
+					/>
+					<button
+						type="submit"
+						value="Submit"
+						onclick="onRegister()"
+						class="w-[7rem] h-12 bg-white cursor-pointer rounded-3xl border-2 border-blue-500 shadow-[inset_0px_-2px_0px_1px_#3b82f6] group hover:bg-[#3b82f6] transition duration-300 ease-in-out active:scale-x-90"
+					>
+						Register
+					</button>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
