@@ -52,9 +52,17 @@ function onRegister() {
 		resetLabel()
 		changeLabeColor(L_Fname, 'please enter valid name ❌')
 		return (valid = false)
+	} else if (firstName.charAt(0) !== firstName.charAt(0).toUpperCase()) {
+		resetLabel()
+		changeLabeColor(L_Fname, 'first letter should be upper case ❌')
+		return (valid = false)
 	} else if (lastName.length == 0 || lastName.indexOf(' ') != -1) {
 		resetLabel()
 		changeLabeColor(L_Lname, 'please enter valid name ❌')
+		return (valid = false)
+	} else if (lastName.charAt(0) !== lastName.charAt(0).toUpperCase()) {
+		resetLabel()
+		changeLabeColor(L_Lname, 'first letter should be upper case ❌')
 		return (valid = false)
 	} else if (emailPattern.test(Email) == false) {
 		resetLabel()
